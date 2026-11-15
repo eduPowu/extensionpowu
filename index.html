@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>財團法人花蓮私立博武教育學院</title>
+    
+    <!-- 學校校徽 Favicon 設定 -->
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/a/ACg8ocJB5ZDSMvr-HLN8nPZHBfwTXrqabGSLgEh8q_Vk663VGtuH2iOC=s192-c-mo">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/a/ACg8ocJB5ZDSMvr-HLN8nPZHBfwTXrqabGSLgEh8q_Vk663VGtuH2iOC=s192-c-mo">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* 防止出現雙重捲軸 */
+            background-color: #ffffff;
+        }
+        .fullscreen-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="iframe-placeholder"></div>
+    <script>
+    (function() {
+        // 避免在巢狀框架內發生衝突
+        if (window.self !== window.top) {
+            try {
+                // 允許合法的框架巢狀載入
+            } catch (e) {
+                return;
+            }
+        }
+
+        // 使用 Base64 解碼目標 Google Apps Script 網址
+        const encodedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6azhfOEJ0UlpJLUhYaWgxUHVtNFpKNHc5TC1ESTAyNE8tVDl5eU9rdnZ3NC13RVpKSEdJckxscGNaSUduZzdVRW4vZXhlYw==";
+        
+        try {
+            const targetUrl = atob(encodedUrl);
+            const ifrm = document.createElement("iframe");
+            
+            // 設定 iframe 屬性
+            ifrm.className = "fullscreen-iframe";
+            ifrm.name = "財團法人花蓮私立博武教育學院";
+            ifrm.setAttribute("src", targetUrl);
+            
+            // 開放手機與電腦各項互動與權限
+            ifrm.setAttribute("allow", "fullscreen; geolocation; microphone; camera; clipboard-write;");
+            ifrm.setAttribute("sandbox", "allow-forms allow-scripts allow-same-origin allow-popups allow-modals allow-downloads allow-popups-to-escape-sandbox");
+            
+            document.getElementById("iframe-placeholder").appendChild(ifrm);
+        } catch (e) {
+            console.error("載入失敗:", e);
+            document.getElementById("iframe-placeholder").innerHTML = "網頁載入發生錯誤，請重新整理。";
+        }
+    })();
+    </script>
+</body>
+</html>
