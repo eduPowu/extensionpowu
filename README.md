@@ -12,7 +12,7 @@
           <td>
             <div class="powu-link-cell-group">
               <a href="javascript:void(0)" onclick="showPage('SeniorOrigin')" class="powu-img-link" aria-label="樂齡學院">
-                <img src="https://thumb_243be28e-035e-41e6-bab7-b92cb7d4bb95.jpg" alt="樂齡學院">
+                <img src="https://raw.githubusercontent.com/eduPowu/extensionpowu/refs/heads/main/thumb_243be28e-035e-41e6-bab7-b92cb7d4bb95.jpg?token=GHSAT0AAAAAAERE44AW74SKU3M56CUV72B22X7WQXQ" alt="樂齡學院">
               </a>
               <a href="javascript:void(0)" onclick="showPage('SeniorOrigin')"class="powu-text-link">樂齡學院</a>
             </div>
