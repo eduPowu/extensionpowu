@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>博武教育學院推廣教育中心入口網</title>
-       <!-- 學校校徽 Favicon 設定 (請替換為你的圖片網址) -->
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/a/ACg8ocJB5ZDSMvr-HLN8nPZHBfwTXrqabGSLgEh8q_Vk663VGtuH2iOC=s192-c-mo">
     <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/a/ACg8ocJB5ZDSMvr-HLN8nPZHBfwTXrqabGSLgEh8q_Vk663VGtuH2iOC=s192-c-mo">    
   <style>
@@ -38,9 +37,7 @@
                 return;
             }
         }
-
-        // 使用 Base64 解碼目標 Google Apps Script 網址
-        const encodedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3MkNmek8wNXhDTHhtaU1lbVdsMk9IdG5aZTVsRjJmd2VlNldjbXFLOHR6LTVadWl6N3p5VVFTX3pVX0hMWVdUYjIvZXhlYw==";
+        const encodedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3M0lrTXN4QnBTQlNfeU5NNmlXVGdvZFo2Z1habHJQc1dYM2dhV2N0U2c1RTVkTWJraU5KRnpyNFFiRERLaDRPbmMvZXhlYw==";
         
         try {
             const targetUrl = atob(encodedUrl);
@@ -50,8 +47,6 @@
             ifrm.className = "fullscreen-iframe";
             ifrm.name = "博武教育學院推廣教育中心入口網";
             ifrm.setAttribute("src", targetUrl);
-            
-            // 開放手機與電腦各項互動與權限
             ifrm.setAttribute("allow", "fullscreen; geolocation; microphone; camera; clipboard-write;");
             ifrm.setAttribute("sandbox", "allow-forms allow-scripts allow-same-origin allow-popups allow-modals allow-downloads allow-popups-to-escape-sandbox");
             
